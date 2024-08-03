@@ -1,12 +1,13 @@
+import { Auth } from "@/components/Auth";
 import { Logo } from "@/components/Logo";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-       <header className="px-4 mt-5 lg:px-6 h-14 flex items-center">
+      <header className="px-4 mt-5 lg:px-6 h-14 flex items-center">
         <Logo />
         <nav className="ml-auto hidden lg:flex gap-4 sm:gap-6">
-          Auth
+          <Auth />
         </nav>
       </header>
       <main className="flex-1">
